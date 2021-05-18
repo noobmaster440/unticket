@@ -13,10 +13,13 @@
 		43679A372650E6A900ABEB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43679A352650E6A900ABEB4F /* Main.storyboard */; };
 		43679A392650E6AA00ABEB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43679A382650E6AA00ABEB4F /* Assets.xcassets */; };
 		43679A3C2650E6AA00ABEB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43679A3A2650E6AA00ABEB4F /* LaunchScreen.storyboard */; };
+		43805F2B265439A5000E2E5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43805F2A265439A5000E2E5C /* GoogleService-Info.plist */; };
 		43D16A322651DA45007AA5D0 /* ParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D16A312651DA45007AA5D0 /* ParkingViewController.swift */; };
+		DCB0BE6B544216C78B564F7D /* Pods_Unticket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77115CA1F584703A66060C0 /* Pods_Unticket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C17F712D90F49F1BA8A3D73 /* Pods-Unticket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unticket.debug.xcconfig"; path = "Target Support Files/Pods-Unticket/Pods-Unticket.debug.xcconfig"; sourceTree = "<group>"; };
 		43679A2C2650E6A900ABEB4F /* Unticket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unticket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43679A2F2650E6A900ABEB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43679A312650E6A900ABEB4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +28,10 @@
 		43679A382650E6AA00ABEB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43679A3B2650E6AA00ABEB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43679A3D2650E6AA00ABEB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43805F2A265439A5000E2E5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43D16A312651DA45007AA5D0 /* ParkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingViewController.swift; sourceTree = "<group>"; };
+		7EC566C43AEB39AB4D392C95 /* Pods-Unticket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unticket.release.xcconfig"; path = "Target Support Files/Pods-Unticket/Pods-Unticket.release.xcconfig"; sourceTree = "<group>"; };
+		B77115CA1F584703A66060C0 /* Pods_Unticket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unticket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB0BE6B544216C78B564F7D /* Pods_Unticket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		354507B036184025D0813210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B77115CA1F584703A66060C0 /* Pods_Unticket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A819BF463AF3CB3E720D026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C17F712D90F49F1BA8A3D73 /* Pods-Unticket.debug.xcconfig */,
+				7EC566C43AEB39AB4D392C95 /* Pods-Unticket.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		43679A232650E6A900ABEB4F = {
 			isa = PBXGroup;
 			children = (
 				43679A2E2650E6A900ABEB4F /* Unticket */,
 				43679A2D2650E6A900ABEB4F /* Products */,
+				3A819BF463AF3CB3E720D026 /* Pods */,
+				354507B036184025D0813210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +88,7 @@
 				43679A2F2650E6A900ABEB4F /* AppDelegate.swift */,
 				43679A312650E6A900ABEB4F /* SceneDelegate.swift */,
 				43679A332650E6A900ABEB4F /* ViewController.swift */,
+				43805F2A265439A5000E2E5C /* GoogleService-Info.plist */,
 				43679A352650E6A900ABEB4F /* Main.storyboard */,
 				43679A382650E6AA00ABEB4F /* Assets.xcassets */,
 				43679A3A2650E6AA00ABEB4F /* LaunchScreen.storyboard */,
@@ -77,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43679A402650E6AA00ABEB4F /* Build configuration list for PBXNativeTarget "Unticket" */;
 			buildPhases = (
+				C5C8A1EEB292E9A56A03FD25 /* [CP] Check Pods Manifest.lock */,
 				43679A282650E6A900ABEB4F /* Sources */,
 				43679A292650E6A900ABEB4F /* Frameworks */,
 				43679A2A2650E6A900ABEB4F /* Resources */,
+				A6D0C59912F37164A31A6FF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,12 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				43679A3C2650E6AA00ABEB4F /* LaunchScreen.storyboard in Resources */,
+				43805F2B265439A5000E2E5C /* GoogleService-Info.plist in Resources */,
 				43679A392650E6AA00ABEB4F /* Assets.xcassets in Resources */,
 				43679A372650E6A900ABEB4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6D0C59912F37164A31A6FF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Unticket/Pods-Unticket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Unticket/Pods-Unticket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Unticket/Pods-Unticket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C8A1EEB292E9A56A03FD25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Unticket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43679A282650E6A900ABEB4F /* Sources */ = {
@@ -287,6 +360,7 @@
 		};
 		43679A412650E6AA00ABEB4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C17F712D90F49F1BA8A3D73 /* Pods-Unticket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +379,7 @@
 		};
 		43679A422650E6AA00ABEB4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC566C43AEB39AB4D392C95 /* Pods-Unticket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

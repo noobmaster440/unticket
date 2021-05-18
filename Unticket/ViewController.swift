@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class ViewController: UIViewController {
+    let db=Firestore.firestore()
 
     @IBOutlet weak var appIcon: UIImageView!
     override func viewDidLoad() {
