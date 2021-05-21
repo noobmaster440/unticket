@@ -1,23 +1,25 @@
-//
-//  ParkingViewController.swift
-//  Unticket
-//
-//  Created by Graphic on 2021-05-16.
-//
 
 import UIKit
-
+import MapKit
 class ParkingViewController: UIViewController {
 
     @IBOutlet weak var time: UIPickerView!
+    @IBOutlet weak var buildingCode: UIPickerView!
+    @IBOutlet weak var timestamp: UITextField!
+    @IBOutlet weak var suitNo: UITextField!
+    @IBOutlet weak var address: UITextField!
+    
+    @IBOutlet weak var mapLocation: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        time.dataSource = self
-//        time.delegate = self
+//        self.time.dataSource = self
+//        self.time.delegate = self
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addParking(_ sender: Any) {
+    }
+    
 }
 
 extension ViewController: UIPickerViewDataSource{
