@@ -11,7 +11,7 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
         }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
        {
-               return String(arrayOf24[row])
+               return String(arrayOf24Titles[row])
            
        }
        
@@ -22,8 +22,9 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
            
                print(String(arrayOf24[row]))
        }
-    var arrayOf24 = Array(0...24)
-    var arrayOf60 = Array(0...60)
+    var arrayOf24 =  [1,4,12,24]
+    var arrayOf24Titles = ["1 Hr or less", "4 Hr", "12 Hr", "24 Hr"]
+    
     @IBOutlet weak var time: UIPickerView!
     
     @IBOutlet weak var timestamp: UITextField!
