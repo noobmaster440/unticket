@@ -295,7 +295,7 @@ extension ParkingViewController: CLLocationManagerDelegate{
                     streetName = "\(street)"
                     
                 }else{
-                    self.address.text = "No Address Found"
+                    self.errorText.text = "No Address Found"
                 }
             }
         }
