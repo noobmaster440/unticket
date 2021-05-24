@@ -205,7 +205,10 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
             return
         }
         
+        let userId = UserDefaults.standard.string(forKey: "ID")!
+        
         let parkingDetails = [
+            "user_id": userId,
             "building_code":buildingCodeString,
             "no_hours":numberOfHours,
             "license":licenseStr,
@@ -216,6 +219,7 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
             "date_time":date_time
         ] as [String : Any]
         
+         
         db.collection("parking").addDocument(data: parkingDetails) { (error) in
             if let err = error {
                 print("Error when saving document")
