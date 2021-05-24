@@ -64,6 +64,15 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
     var longitude = 0.0;
     var numberOfHours = 1;
     
+    
+    @IBAction func updateProfileClicked(_ sender: Any) {
+        guard let updateProfile = self.storyboard?.instantiateViewController(identifier: "update_profile") as? UpdateProfileViewController else {
+            print("Cannot find Update Profile!")
+            return
+        }
+        self.show(updateProfile, sender: self)
+    }
+    
     @IBAction func useCurrentLocation(_ sender: Any) {
         locationManager.requestWhenInUseAuthorization()
         var currentLocation: CLLocation!

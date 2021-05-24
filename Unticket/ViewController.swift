@@ -40,6 +40,7 @@ class ViewController: UIViewController {
                                     print("Cannot find Parking List!")
                                     return
                                 }
+                                UserDefaults.standard.set(result.documentID, forKey: "ID")
                                 self.show(listParking, sender: self)
                                 break
                             }else{
