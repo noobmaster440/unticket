@@ -51,10 +51,15 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
     
     @IBOutlet weak var mapView: MKMapView!
     
+
+    @IBOutlet weak var txtCountryName: UITextField!
+    @IBOutlet weak var txtCityName: UITextField!
     
     @IBOutlet weak var errorText: UILabel!
     
     var streetName = ""
+    var cityName = ""
+    var countryName = ""
     var latitude = 0.0;
     var longitude = 0.0;
     var numberOfHours = 1;
@@ -88,7 +93,56 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
               
     }
     
+    private func getLocation(address : String){
+        self.geocoder.geocodeAddressString(address, completionHandler: { (placemark, error) in
+            self.processGeoResponse(placemarks: placemark, error: error)
+        })
+    }
+    
+    private func processGeoResponse(placemarks: [CLPlacemark]?, error: Error?){
+        if error != nil{
+            self.errorText.text = "Unable to get location coordinates"
+        }else{
+            var obtainedLocation : CLLocation?
+            
+            if let placemark = placemarks, placemarks!.count > 0{
+                obtainedLocation = placemark.first?.location
+            }
+            
+            if obtainedLocation != nil{
+                
+                latitude = obtainedLocation?.coordinate.latitude ?? 0.0
+                longitude = obtainedLocation?.coordinate.longitude ?? 0.0
+                
+                print("latitude \(latitude)")
+                print("longitude \(longitude)")
+                self.errorText.text = "Location details verified"
+                
+            }else{
+                self.errorText.text = "No Coordinates Found"
+            }
+        }
+    }
+    
+    
+    @IBAction func getLocationPressed(_ sender: Any) {
+        guard let country = txtCountryName.text else {return}
+        guard let city = txtCityName.text else {return}
+        guard let street = address.text else {return}
+                
+        streetName = street
+        countryName = country
+        cityName = city
+            
+        let postalAddress = "\(country), \(city), \(street)"
+        print("Postal Address \(postalAddress)")
+                
+        self.getLocation(address: postalAddress)
+    }
+    
     @IBAction func addParking(_ sender: Any) {
+        
+        self.errorText.text = ""
         
         var date_time = getTimestamp()
         
@@ -97,6 +151,10 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
             errorText.text = "Street Name is empty"
             return
         }
+        
+        print("latitude \(latitude)")
+        print("longitude \(longitude)")
+        
         if(latitude == 0.0 || longitude == 0.0)
         {
             errorText.text = "Can not get Location details"
@@ -161,6 +219,7 @@ class ParkingViewController: UIViewController,UIPickerViewDataSource, UIPickerVi
                 self.buildingCode.text = ""
                 self.suitNo.text = ""
                 self.address.text = ""
+                self.errorText.text = ""
                 
             }
         }
@@ -212,12 +271,14 @@ extension ParkingViewController: CLLocationManagerDelegate{
             }else{
                 if let placemarks = placemarkList, let placemark = placemarks.first{
                     
-                    //let city = placemark.locality ?? "NA"
+                    let city = placemark.locality ?? "NA"
                     //let province = placemark.administrativeArea ?? "NA"
-                    //let country = placemark.country ?? "NA"
+                    let country = placemark.country ?? "NA"
                     let street = placemark.thoroughfare ?? "NA"
                     
                     self.address.text = "\(street)"
+                    self.txtCityName.text = "\(city)"
+                    self.txtCountryName.text = "\(country)"
                     streetName = "\(street)"
                     
                 }else{
