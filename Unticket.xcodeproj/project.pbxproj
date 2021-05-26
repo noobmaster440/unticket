@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430DA1E4265D4F2600CD1D26 /* parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DA1E3265D4F2600CD1D26 /* parking.swift */; };
+		430DA1EA265D6E9800CD1D26 /* TableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DA1E9265D6E9800CD1D26 /* TableDetailViewController.swift */; };
 		4341F38726562CFA00B0E8A6 /* createUpdateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341F38626562CFA00B0E8A6 /* createUpdateUserViewController.swift */; };
 		43679A302650E6A900ABEB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679A2F2650E6A900ABEB4F /* AppDelegate.swift */; };
 		43679A322650E6A900ABEB4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679A312650E6A900ABEB4F /* SceneDelegate.swift */; };
@@ -14,13 +16,19 @@
 		43679A372650E6A900ABEB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43679A352650E6A900ABEB4F /* Main.storyboard */; };
 		43679A392650E6AA00ABEB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43679A382650E6AA00ABEB4F /* Assets.xcassets */; };
 		43679A3C2650E6AA00ABEB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43679A3A2650E6AA00ABEB4F /* LaunchScreen.storyboard */; };
+		437FDA55265C6C1800D66290 /* ParkingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437FDA54265C6C1800D66290 /* ParkingListViewController.swift */; };
+		437FDA57265C745200D66290 /* EachParking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437FDA56265C745200D66290 /* EachParking.swift */; };
 		43805F2B265439A5000E2E5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43805F2A265439A5000E2E5C /* GoogleService-Info.plist */; };
+		43A6228E265DB0B800862E51 /* ParkingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A6228D265DB0B800862E51 /* ParkingDetailViewController.swift */; };
 		43D16A322651DA45007AA5D0 /* ParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D16A312651DA45007AA5D0 /* ParkingViewController.swift */; };
+		43FB7CEA265C48F200CEAC4E /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB7CE9265C48F200CEAC4E /* UpdateProfileViewController.swift */; };
 		DCB0BE6B544216C78B564F7D /* Pods_Unticket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77115CA1F584703A66060C0 /* Pods_Unticket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C17F712D90F49F1BA8A3D73 /* Pods-Unticket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unticket.debug.xcconfig"; path = "Target Support Files/Pods-Unticket/Pods-Unticket.debug.xcconfig"; sourceTree = "<group>"; };
+		430DA1E3265D4F2600CD1D26 /* parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parking.swift; sourceTree = "<group>"; };
+		430DA1E9265D6E9800CD1D26 /* TableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDetailViewController.swift; sourceTree = "<group>"; };
 		4341F38626562CFA00B0E8A6 /* createUpdateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUpdateUserViewController.swift; sourceTree = "<group>"; };
 		43679A2C2650E6A900ABEB4F /* Unticket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unticket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43679A2F2650E6A900ABEB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,8 +38,12 @@
 		43679A382650E6AA00ABEB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43679A3B2650E6AA00ABEB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43679A3D2650E6AA00ABEB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437FDA54265C6C1800D66290 /* ParkingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingListViewController.swift; sourceTree = "<group>"; };
+		437FDA56265C745200D66290 /* EachParking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachParking.swift; sourceTree = "<group>"; };
 		43805F2A265439A5000E2E5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43A6228D265DB0B800862E51 /* ParkingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailViewController.swift; sourceTree = "<group>"; };
 		43D16A312651DA45007AA5D0 /* ParkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingViewController.swift; sourceTree = "<group>"; };
+		43FB7CE9265C48F200CEAC4E /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		7EC566C43AEB39AB4D392C95 /* Pods-Unticket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unticket.release.xcconfig"; path = "Target Support Files/Pods-Unticket/Pods-Unticket.release.xcconfig"; sourceTree = "<group>"; };
 		B77115CA1F584703A66060C0 /* Pods_Unticket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unticket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +101,7 @@
 				43679A2F2650E6A900ABEB4F /* AppDelegate.swift */,
 				43679A312650E6A900ABEB4F /* SceneDelegate.swift */,
 				43679A332650E6A900ABEB4F /* ViewController.swift */,
+				430DA1E9265D6E9800CD1D26 /* TableDetailViewController.swift */,
 				43805F2A265439A5000E2E5C /* GoogleService-Info.plist */,
 				43679A352650E6A900ABEB4F /* Main.storyboard */,
 				4341F38626562CFA00B0E8A6 /* createUpdateUserViewController.swift */,
@@ -96,6 +109,11 @@
 				43679A3A2650E6AA00ABEB4F /* LaunchScreen.storyboard */,
 				43679A3D2650E6AA00ABEB4F /* Info.plist */,
 				43D16A312651DA45007AA5D0 /* ParkingViewController.swift */,
+				43A6228D265DB0B800862E51 /* ParkingDetailViewController.swift */,
+				437FDA54265C6C1800D66290 /* ParkingListViewController.swift */,
+				430DA1E3265D4F2600CD1D26 /* parking.swift */,
+				437FDA56265C745200D66290 /* EachParking.swift */,
+				43FB7CE9265C48F200CEAC4E /* UpdateProfileViewController.swift */,
 			);
 			path = Unticket;
 			sourceTree = "<group>";
@@ -215,9 +233,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A6228E265DB0B800862E51 /* ParkingDetailViewController.swift in Sources */,
 				43679A342650E6A900ABEB4F /* ViewController.swift in Sources */,
+				437FDA57265C745200D66290 /* EachParking.swift in Sources */,
 				43D16A322651DA45007AA5D0 /* ParkingViewController.swift in Sources */,
 				4341F38726562CFA00B0E8A6 /* createUpdateUserViewController.swift in Sources */,
+				43FB7CEA265C48F200CEAC4E /* UpdateProfileViewController.swift in Sources */,
+				437FDA55265C6C1800D66290 /* ParkingListViewController.swift in Sources */,
+				430DA1EA265D6E9800CD1D26 /* TableDetailViewController.swift in Sources */,
+				430DA1E4265D4F2600CD1D26 /* parking.swift in Sources */,
 				43679A302650E6A900ABEB4F /* AppDelegate.swift in Sources */,
 				43679A322650E6A900ABEB4F /* SceneDelegate.swift in Sources */,
 			);

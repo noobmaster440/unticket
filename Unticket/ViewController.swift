@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         db.collection("visitor").getDocuments {
             (queryResults, error) in
             if let err = error {
-                print("Error getting documents from student collection")
+                print("Error getting documents from visitor collection")
                 print(err)
                 return
             }
@@ -36,10 +36,19 @@ class ViewController: UIViewController {
                             isFound=true
                             if (row["password"] as? String)==passwordEntered{
                                 print("User Found")
-                                guard let listParking = self.storyboard?.instantiateViewController(identifier: "parkingscreen") as? ParkingViewController else {
+                                UserDefaults.standard.set(result.documentID, forKey: "ID")
+                                print("user found2")
+                                guard let listParking = self.storyboard?.instantiateViewController(identifier: "profiletab")  else {
                                     print("Cannot find Parking List!")
                                     return
                                 }
+//                                let appDelegate = UIApplication.shared.delegate! as! AppDelegate
+                                //
+                                //                                 let initialViewController = self.storyboard!.instantiateViewController(withIdentifier: "parkingtab")
+                                //                                 appDelegate.window?.rootViewController = initialViewController
+                                //                                 appDelegate.window?.makeKeyAndVisible()
+//                                self.performSegue(withIdentifier: "successLogin", sender: nil)
+                                
                                 self.show(listParking, sender: self)
                                 break
                             }else{
